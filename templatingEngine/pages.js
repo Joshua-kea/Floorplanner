@@ -1,9 +1,8 @@
 import { constructPage, readPage } from "./templatingEngine.js";
 
-const login = readPage("public/pages/auth/login.html");
+const auth = readPage("public/pages/auth/auth.html");
 
-export const loginPage = constructPage(login);
-
-const signUp = readPage("public/pages/auth/signUp.html");
-
-export const signUpPage = constructPage(signUp);
+export const authPage = constructPage(auth, {
+    cssLinks: `<link rel="stylesheet" href="/assets/css/auth.css"/>`,
+    tabTitle: "Floorplanner | Authentication"
+});

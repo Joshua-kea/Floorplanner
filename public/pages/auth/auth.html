@@ -1,0 +1,70 @@
+<div id="auth-container">
+  <div id="auth-card">
+    <div class="auth-card-side" id="login-side">
+      <form action="/api/login" method="POST">
+
+        <h2>Log in</h2>
+
+        <fieldset>
+          <label for="login-email">E-mail</label>
+
+          <input
+            type="email"
+            id="login-email"
+            name="email"
+            required
+            placeholder="example@email.com"
+          />
+
+          <label for="login-password">Password</label>
+
+          <input
+            type="password"
+            id="login-password"
+            name="password"
+            required
+            placeholder="********"
+          />
+
+          <button id="login-button">Log in</button>
+        </fieldset>
+        <button type="button" class="flip-button" id="show-signup-button">Don't have an account? Sign up</button>
+      </form>
+    </div>
+
+    <div class="auth-card-side" id="signup-side">
+      <form action="/api/signup" method="POST">
+
+        <h2>Sign up</h2>
+
+        <fieldset>
+          
+          <label for="signup-email">E-mail</label>
+
+          <input
+            type="email"
+            id="signup-email"
+            name="email"
+            required
+            placeholder="example@email.com"
+          />
+
+          <label for="signup-password">Password</label>
+
+          <input
+            type="password"
+            id="signup-password"
+            name="password"
+            required
+            placeholder="********"
+          />
+
+          <button id="signup-button">Sign up</button>
+        </fieldset>
+        <button type="button" class="flip-button" id="show-login-button">Already have an account? Login</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="/pages/auth/auth.js"></script>

@@ -2,14 +2,6 @@ import { Router } from "express";
 
 const router = Router();
 
-router.get("/api/rooms", (req, res) => {
-  res.send();
-});
-
-router.get("/api/rooms/:id", (req, res) => {
-  res.send();
-});
-
 router.post("/api/rooms", (req, res) => {
   res.send();
 });

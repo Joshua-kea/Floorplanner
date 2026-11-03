@@ -4,6 +4,8 @@ const app = express();
 
 app.use(express.static("public"));
 
+app.use(express.urlencoded());
+
 import authRouter from "./routers/authRouter.js";
 import pagesRouter from "./routers/pagesRouter.js";
 import projectsRouter from "./routers/api/projectsRouter.js";

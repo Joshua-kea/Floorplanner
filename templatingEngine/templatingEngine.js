@@ -1,13 +1,17 @@
-import fs from 'fs';
+import fs from "fs";
 
-export function constructPage(page) {
+export function constructPage(page, options = {}) {
+  const header = readPage("public/components/header/header.html");
+  const footer = readPage("public/components/footer/footer.html");
 
-    const header = readPage('public/components/header/header.html');
-    const footer = readPage('public/components/footer/footer.html');
+  return header
+      .replace("{{CSS_LINKS}}", options.cssLinks || "")
+      .replace("{{TAB_TITLE}}", options.tabTitle || "") 
 
-    return header + page + footer;
+      + page 
+      + footer;
 }
 
 export function readPage(path) {
-    return fs.readFileSync(path, 'utf-8');
+  return fs.readFileSync(path, "utf-8");
 }
