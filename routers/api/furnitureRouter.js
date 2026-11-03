@@ -11,13 +11,15 @@ router.get("/api/furniture/:id", (req, res) => {
 });
 
 router.post("/api/furniture", (req, res) => {
-    res.send();
+  res.send();
 });
 
 router.patch("/api/furniture/:id", (req, res) => {
-    res.send();
+  res.send();
 });
 
 router.delete("/api/furniture/:id", (req, res) => {
-    res.send();
+  res.send();
 });
+
+export default router;

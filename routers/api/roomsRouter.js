@@ -21,3 +21,5 @@ router.patch("/api/rooms/:id", (req, res) => {
 router.delete("/api/rooms/:id", (req, res) => {
   res.send();
 });
+
+export default router;

@@ -11,13 +11,15 @@ router.get("/api/projects/:id", (req, res) => {
 });
 
 router.post("/api/projects", (req, res) => {
-    res.send();
+  res.send();
 });
 
 router.patch("/api/projects/:id", (req, res) => {
-    res.send();
+  res.send();
 });
 
 router.delete("/api/projects/:id", (req, res) => {
-    res.send();
+  res.send();
 });
+
+export default router;
